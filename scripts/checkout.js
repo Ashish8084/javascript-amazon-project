@@ -11,6 +11,11 @@ const today=dayjs();
  console.log (deliverDate.format('dddd, MMMM D'));
 
 
+ function renderOrderSummary(){
+
+ 
+
+
 let cartSummaryHTML= ''; 
   
 cart.forEach((cartItem)=>{
@@ -153,9 +158,15 @@ cart.forEach((cartItem)=>{
       element.addEventListener('click',()=>{
         const { productId, deliveryOptionId}=element.dataset;
         updateDeliveryOption( productId, deliveryOptionId);
+        renderOrderSummary();
 
       });
 
 
 
      });  
+
+    }
+
+
+    renderOrderSummary();
