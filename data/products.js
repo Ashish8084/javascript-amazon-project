@@ -60,6 +60,32 @@ class Clothing extends  Product {
   }
 
 }
+
+/*const date = new Date();
+console.log(date);
+console.log(date.toLocaleTimeString());
+*/
+/*
+console.log(this);
+const object2={
+  a:2,
+  b:this.a
+};
+*/
+/*
+function logThis(){
+  console.log(this);
+}
+logThis();
+logThis.call('hello');
+this
+const object3={
+  method:()=>{
+    console.log(this);
+  }
+};
+object3.method();
+*/
 const tshirt= new Clothing({
   id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
   image: "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
@@ -77,8 +103,8 @@ const tshirt= new Clothing({
   type: "clothing",
   sizeChartLink: "images/clothing-size-chart.png"
 });
-console.log(tshirt);
-console.log(tshirt.getPrice());
+//console.log(tshirt);
+//console.log(tshirt.getPrice());
 
 const product1=new Product( {
   id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
